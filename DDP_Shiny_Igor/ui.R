@@ -20,7 +20,7 @@ ui <- shinyUI(fluidPage(
       
       p("This app serves an educational purpose of demonstrating basic graphical explorative 
         analysis of the famous", code('iris'), "dataset. The dataset is transformed into the 'long' tidy format
-        and", code("ggplot2"), "plotting system is used for visualisation!"),
+        and", code("ggplot2"), "plotting system is used for visualisation."),
       
       
       selectInput('x', 'X', names(dataset)),
