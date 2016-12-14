@@ -1,3 +1,14 @@
+library(shiny)
+library(ggplot2)
+library(dplyr)
+library(tidyr)
+
+
+iris_l <-  gather(iris, Dimension, Value, -Species) %>% separate(Dimension, c("Part", "Measure"))
+iris_l$Part <- as.factor(iris_l$Part)
+dataset <- iris_l
+
+
 server <- shinyServer(function(input, output) {
   
   dataset <- reactive({iris_l})

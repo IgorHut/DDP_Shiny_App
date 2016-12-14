@@ -18,7 +18,7 @@ ui <- shinyUI(fluidPage(
     
     sidebarPanel(
       
-      p("This app serves an educational purpose of demonstrating basic graphical explorative 
+      p("This app serves an educational purpose of demonstrating basic graphical exploratory 
         analysis of the famous", code('iris'), "dataset. The dataset is transformed into the 'long' tidy format
         and", code("ggplot2"), "plotting system is used for visualisation."),
       
